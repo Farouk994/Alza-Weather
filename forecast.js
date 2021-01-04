@@ -10,8 +10,8 @@ const getWeather = async function(id){
     const response = await fetch(base + query);
     const data = await response.json();
 
-//    return data[0];
-console.log(data[0]);
+   return data[0];
+// console.log(data[0]);
 
 }
 
@@ -23,11 +23,18 @@ console.log(data[0]);
     const response = await fetch( base + query );
     const data = await response.json();
 
-    console.log(data[0]);
+    // console.log(data[0]);
+    return data[0];
     
 }
 
 ///////////////////////////////////////////////////////////
 
-getCity("ottawa");
-getWeather("55487")
+// getCity('ottawa').then(function(data){
+    // return getWeather(data.Key)
+// }).then(function(data){
+//   return data;
+// }).catch(function(err){
+//   return err.message;
+// });
+
